@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank Account App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Money In the Bank!</h1>
+        <h2>What you think about that?!</h2>
+      </div>
+      <div class="row">
+        <div id="firstAccount" class="col-md-6">
+          <h3>Register New Account:</h3>
+          <form id="register">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input id="accountName" type="text">
+            </div>
+            <div class="form-group">
+              <label for="deposit">Initial Deposit:</label>
+              <input id="initialDeposit" min="0" type="number">
+            </div>
+            <button type="submit" class="btn btn-danger">Fudge!</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h3>Deposit/Withdraw:</h3>
+          <form id="atm">
+            <div class="form-group">
+              <label for="deposit">Deposit:</label>
+              <input id="deposit" min="0" type="number">
+            </div>
+            <div class="form-group">
+              <label for="withdrawal">Withdrawal:</label>
+              <input id="withdrawal" min="0" type="number">
+            </div>
+            <button type="submit" class="btn btn-danger">Super Fudge!</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="current-balance">
+            <h3>Account info:</h3>
+            <p><strong>Account name:</strong></p> <span class="account-name"></span>
+            <p><strong>Current balance:</strong></p><span class="balance-money"></span>
+          </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
